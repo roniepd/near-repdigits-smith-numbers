@@ -1,0 +1,214 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\IfFileExists{portuges.ldf}{\usepackage[portuguese]{babel}}{}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+
+\onehalfspacing
+
+\begin{document}
+
+\renewcommand{\tablename}{Tabela}
+\renewcommand{\appendixname}{Anexo}
+\appendix
+
+\chapter{Quase-repdígitos Smith e suas fatorações primas}
+\label{anexo:quase-repdigitos-smith}
+
+A Tabela~\ref{tab:anexo-quase-repdigitos-smith}
+reúne os \(121\) quase-repdígitos Smith com
+\(3\) a \(19\) algarismos obtidos na busca exaustiva
+descrita no Capítulo~3.
+Os números são apresentados em ordem crescente,
+acompanhados de suas fatorações primas completas
+e do valor comum \(S(N)=P(N)\).
+Na soma \(P(N)\), os fatores primos são considerados
+com suas respectivas multiplicidades.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{@{}r>{\raggedright\arraybackslash}p{0.57\textwidth}c@{}}
+\caption{Quase-repdígitos Smith com até \(19\) algarismos
+ e suas fatorações primas.}
+\label{tab:anexo-quase-repdigitos-smith}\\
+\hline
+\(N\) & Fatoração prima & \(S(N)=P(N)\)\\
+\hline
+\endfirsthead
+\multicolumn{3}{c}{\tablename~\thetable{} -- continuação}\\
+\hline
+\(N\) & Fatoração prima & \(S(N)=P(N)\)\\
+\hline
+\endhead
+\hline
+\multicolumn{3}{r}{\footnotesize Continua na próxima página.}\\
+\endfoot
+\hline
+\multicolumn{3}{c}{\footnotesize Fonte: elaborada pela autora.}\\
+\endlastfoot
+\multicolumn{3}{c}{\textit{3 algarismos}}\\*
+\(121\) & \(11^{2}\) & \(4\)\\
+\(166\) & \(2\cdot\allowbreak 83\) & \(13\)\\
+\(202\) & \(2\cdot\allowbreak 101\) & \(4\)\\
+\(355\) & \(5\cdot\allowbreak 71\) & \(13\)\\
+\(454\) & \(2\cdot\allowbreak 227\) & \(13\)\\
+\(535\) & \(5\cdot\allowbreak 107\) & \(13\)\\
+\(588\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 7^{2}\) & \(21\)\\
+\(636\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 53\) & \(15\)\\
+\(663\) & \(3\cdot\allowbreak 13\cdot\allowbreak 17\) & \(15\)\\
+\(778\) & \(2\cdot\allowbreak 389\) & \(22\)\\
+\(922\) & \(2\cdot\allowbreak 461\) & \(13\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{4 algarismos}}\\*
+\(2227\) & \(17\cdot\allowbreak 131\) & \(13\)\\
+\(2722\) & \(2\cdot\allowbreak 1361\) & \(13\)\\
+\(2888\) & \(2^{3}\cdot\allowbreak 19^{2}\) & \(26\)\\
+\(4414\) & \(2\cdot\allowbreak 2207\) & \(13\)\\
+\(4464\) & \(2^{4}\cdot\allowbreak 3^{2}\cdot\allowbreak 31\) & \(18\)\\
+\(8883\) & \(3^{3}\cdot\allowbreak 7\cdot\allowbreak 47\) & \(27\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{5 algarismos}}\\*
+\(22522\) & \(2\cdot\allowbreak 11261\) & \(13\)\\
+\(25222\) & \(2\cdot\allowbreak 12611\) & \(13\)\\
+\(33633\) & \(3^{2}\cdot\allowbreak 37\cdot\allowbreak 101\) & \(18\)\\
+\(52222\) & \(2\cdot\allowbreak 26111\) & \(13\)\\
+\(55055\) & \(5\cdot\allowbreak 7\cdot\allowbreak 11^{2}\cdot\allowbreak 13\) & \(20\)\\
+\(55955\) & \(5\cdot\allowbreak 19^{2}\cdot\allowbreak 31\) & \(29\)\\
+\(66636\) & \(2^{2}\cdot\allowbreak 3^{3}\cdot\allowbreak 617\) & \(27\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{6 algarismos}}\\*
+\(223222\) & \(2\cdot\allowbreak 111611\) & \(13\)\\
+\(255555\) & \(3^{4}\cdot\allowbreak 5\cdot\allowbreak 631\) & \(27\)\\
+\(333339\) & \(3\cdot\allowbreak 23\cdot\allowbreak 4831\) & \(24\)\\
+\(333733\) & \(107\cdot\allowbreak 3119\) & \(22\)\\
+\(555558\) & \(2\cdot\allowbreak 3\cdot\allowbreak 92593\) & \(33\)\\
+\(888288\) & \(2^{5}\cdot\allowbreak 3\cdot\allowbreak 19\cdot\allowbreak 487\) & \(42\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{7 algarismos}}\\*
+\(1222222\) & \(2\cdot\allowbreak 611111\) & \(13\)\\
+\(2221222\) & \(2\cdot\allowbreak 1110611\) & \(13\)\\
+\(3444444\) & \(2^{2}\cdot\allowbreak 3^{4}\cdot\allowbreak 10631\) & \(27\)\\
+\(6666646\) & \(2\cdot\allowbreak 7^{2}\cdot\allowbreak 59\cdot\allowbreak 1153\) & \(40\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{8 algarismos}}\\*
+\(33353333\) & \(13^{2}\cdot\allowbreak 151\cdot\allowbreak 1307\) & \(26\)\\
+\(55555755\) & \(3\cdot\allowbreak 5\cdot\allowbreak 947\cdot\allowbreak 3911\) & \(42\)\\
+\(66666066\) & \(2\cdot\allowbreak 3\cdot\allowbreak 167\cdot\allowbreak 66533\) & \(42\)\\
+\(66666668\) & \(2^{2}\cdot\allowbreak 19\cdot\allowbreak 739\cdot\allowbreak 1187\) & \(50\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{9 algarismos}}\\*
+\(266666666\) & \(2\cdot\allowbreak 7\cdot\allowbreak 59\cdot\allowbreak 113\cdot\allowbreak 2857\) & \(50\)\\
+\(444444544\) & \(2^{7}\cdot\allowbreak 3472223\) & \(37\)\\
+\(444484444\) & \(2^{2}\cdot\allowbreak 41\cdot\allowbreak 73\cdot\allowbreak 137\cdot\allowbreak 271\) & \(40\)\\
+\(552555555\) & \(3\cdot\allowbreak 5\cdot\allowbreak 2207\cdot\allowbreak 16691\) & \(42\)\\
+\(555555455\) & \(5\cdot\allowbreak 7\cdot\allowbreak 13\cdot\allowbreak 23\cdot\allowbreak 53087\) & \(44\)\\
+\(665666666\) & \(2\cdot\allowbreak 7^{2}\cdot\allowbreak 6792517\) & \(53\)\\
+\(666646666\) & \(2\cdot\allowbreak 7^{2}\cdot\allowbreak 2381\cdot\allowbreak 2857\) & \(52\)\\
+\(666666665\) & \(5\cdot\allowbreak 7\cdot\allowbreak 59\cdot\allowbreak 113\cdot\allowbreak 2857\) & \(53\)\\
+\(666676666\) & \(2\cdot\allowbreak 23\cdot\allowbreak 67\cdot\allowbreak 199\cdot\allowbreak 1087\) & \(55\)\\
+\(777777477\) & \(3\cdot\allowbreak 29\cdot\allowbreak 8939971\) & \(60\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{10 algarismos}}\\*
+\(2555555555\) & \(5\cdot\allowbreak 7^{2}\cdot\allowbreak 10430839\) & \(47\)\\
+\(3333393333\) & \(3^{2}\cdot\allowbreak 139\cdot\allowbreak 1153\cdot\allowbreak 2311\) & \(36\)\\
+\(4444344444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 307\cdot\allowbreak 1206391\) & \(39\)\\
+\(5525555555\) & \(5\cdot\allowbreak 13^{2}\cdot\allowbreak 6539119\) & \(47\)\\
+\(5555553555\) & \(3\cdot\allowbreak 5\cdot\allowbreak 31\cdot\allowbreak 1097\cdot\allowbreak 10891\) & \(48\)\\
+\(6444444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 537037037\) & \(42\)\\
+\(6606666666\) & \(2\cdot\allowbreak 3^{4}\cdot\allowbreak 40781893\) & \(54\)\\
+\(6666666066\) & \(2\cdot\allowbreak 3^{3}\cdot\allowbreak 109\cdot\allowbreak 173\cdot\allowbreak 6547\) & \(54\)\\
+\(6666666696\) & \(2^{3}\cdot\allowbreak 3^{2}\cdot\allowbreak 67\cdot\allowbreak 1381979\) & \(63\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{11 algarismos}}\\*
+\(22022222222\) & \(2\cdot\allowbreak 7\cdot\allowbreak 11\cdot\allowbreak 13\cdot\allowbreak 11000111\) & \(20\)\\
+\(44444044444\) & \(2^{2}\cdot\allowbreak 41\cdot\allowbreak 101\cdot\allowbreak 271\cdot\allowbreak 9901\) & \(40\)\\
+\(44444444449\) & \(197\cdot\allowbreak 225606317\) & \(49\)\\
+\(44444444844\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 37\cdot\allowbreak 881\cdot\allowbreak 113621\) & \(48\)\\
+\(44744444444\) & \(2^{2}\cdot\allowbreak 7\cdot\allowbreak 23\cdot\allowbreak 3407\cdot\allowbreak 20393\) & \(47\)\\
+\(55535555555\) & \(5\cdot\allowbreak 47\cdot\allowbreak 73\cdot\allowbreak 1223\cdot\allowbreak 2647\) & \(53\)\\
+\(55555558555\) & \(5\cdot\allowbreak 7\cdot\allowbreak 193\cdot\allowbreak 1471\cdot\allowbreak 5591\) & \(58\)\\
+\(66666566666\) & \(2\cdot\allowbreak 7\cdot\allowbreak 167\cdot\allowbreak 499\cdot\allowbreak 57143\) & \(65\)\\
+\(66666666366\) & \(2\cdot\allowbreak 3^{2}\cdot\allowbreak 19^{2}\cdot\allowbreak 10259567\) & \(63\)\\
+\(74444444444\) & \(2^{2}\cdot\allowbreak 37\cdot\allowbreak 311\cdot\allowbreak 1617373\) & \(47\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{12 algarismos}}\\*
+\(333373333333\) & \(25703\cdot\allowbreak 12970211\) & \(40\)\\
+\(444444144444\) & \(2^{2}\cdot\allowbreak 3^{2}\cdot\allowbreak 19\cdot\allowbreak 41\cdot\allowbreak 3301\cdot\allowbreak 4801\) & \(45\)\\
+\(662666666666\) & \(2\cdot\allowbreak 31\cdot\allowbreak 41\cdot\allowbreak 79\cdot\allowbreak 3299837\) & \(68\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{13 algarismos}}\\*
+\(2666666666666\) & \(2\cdot\allowbreak 17\cdot\allowbreak 71\cdot\allowbreak 1657\cdot\allowbreak 666667\) & \(74\)\\
+\(5555535555555\) & \(3^{2}\cdot\allowbreak 5\cdot\allowbreak 1451\cdot\allowbreak 85083629\) & \(63\)\\
+\(5555555455555\) & \(5\cdot\allowbreak 7\cdot\allowbreak 47\cdot\allowbreak 21859\cdot\allowbreak 154501\) & \(64\)\\
+\(5555555555553\) & \(3^{2}\cdot\allowbreak 73\cdot\allowbreak 409\cdot\allowbreak 20674681\) & \(63\)\\
+\(5556555555555\) & \(3\cdot\allowbreak 5\cdot\allowbreak 331\cdot\allowbreak 811\cdot\allowbreak 1379957\) & \(66\)\\
+\(5559555555555\) & \(3\cdot\allowbreak 5\cdot\allowbreak 42821\cdot\allowbreak 8655497\) & \(69\)\\
+\(6666366666666\) & \(2\cdot\allowbreak 3\cdot\allowbreak 7\cdot\allowbreak 235789\cdot\allowbreak 673157\) & \(75\)\\
+\(6666663666666\) & \(2\cdot\allowbreak 3\cdot\allowbreak 61\cdot\allowbreak 277\cdot\allowbreak 65757863\) & \(75\)\\
+\(6666666666166\) & \(2\cdot\allowbreak 13\cdot\allowbreak 23^{2}\cdot\allowbreak 29\cdot\allowbreak 59\cdot\allowbreak 283289\) & \(73\)\\
+\(6666666666665\) & \(5\cdot\allowbreak 17\cdot\allowbreak 71\cdot\allowbreak 1657\cdot\allowbreak 666667\) & \(77\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{14 algarismos}}\\*
+\(44444344444444\) & \(2^{2}\cdot\allowbreak 7\cdot\allowbreak 41\cdot\allowbreak 6131\cdot\allowbreak 6314563\) & \(55\)\\
+\(44444445444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 53\cdot\allowbreak 317\cdot\allowbreak 220445437\) & \(57\)\\
+\(44444454444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 29\cdot\allowbreak 8011\cdot\allowbreak 15942323\) & \(57\)\\
+\(44454444444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 6247\cdot\allowbreak 593010571\) & \(57\)\\
+\(55555575555555\) & \(3^{4}\cdot\allowbreak 5\cdot\allowbreak 61\cdot\allowbreak 991\cdot\allowbreak 2269181\) & \(72\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{15 algarismos}}\\*
+\(444444444444644\) & \(2^{2}\cdot\allowbreak 7\cdot\allowbreak 263\cdot\allowbreak 60353672521\) & \(62\)\\
+\(444444444444744\) & \(2^{3}\cdot\allowbreak 3^{2}\cdot\allowbreak 436531\cdot\allowbreak 14140667\) & \(63\)\\
+\(444444474444444\) & \(2^{2}\cdot\allowbreak 3^{2}\cdot\allowbreak 1709\cdot\allowbreak 46811\cdot\allowbreak 154321\) & \(63\)\\
+\(555555555255555\) & \(3^{2}\cdot\allowbreak 5\cdot\allowbreak 2087\cdot\allowbreak 5915514617\) & \(72\)\\
+\(666666606666666\) & \(2\cdot\allowbreak 3\cdot\allowbreak 17\cdot\allowbreak 239\cdot\allowbreak 4649\cdot\allowbreak 5882353\) & \(84\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{16 algarismos}}\\*
+\(3133333333333333\) & \(13\cdot\allowbreak 23\cdot\allowbreak 223\cdot\allowbreak 2333\cdot\allowbreak 20142613\) & \(46\)\\
+\(3334333333333333\) & \(233\cdot\allowbreak 14310443490701\) & \(49\)\\
+\(4444444442444444\) & \(2^{2}\cdot\allowbreak 31\cdot\allowbreak 2410153\cdot\allowbreak 14871377\) & \(62\)\\
+\(4444444454444444\) & \(2^{2}\cdot\allowbreak 23\cdot\allowbreak 25303\cdot\allowbreak 1909227319\) & \(65\)\\
+\(4444644444444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 24007\cdot\allowbreak 15428293291\) & \(66\)\\
+\(5555525555555555\) & \(5\cdot\allowbreak 19\cdot\allowbreak 29\cdot\allowbreak 109\cdot\allowbreak 18500226629\) & \(77\)\\
+\(5555555555555585\) & \(5\cdot\allowbreak 19\cdot\allowbreak 7297\cdot\allowbreak 8014188319\) & \(83\)\\
+\(8555555555555555\) & \(5\cdot\allowbreak 643\cdot\allowbreak 1381\cdot\allowbreak 1926963817\) & \(83\)\\
+\(9999999999999994\) & \(2\cdot\allowbreak 4999999999999997\) & \(139\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{17 algarismos}}\\*
+\(26666666666666666\) & \(2\cdot\allowbreak 89\cdot\allowbreak 1447\cdot\allowbreak 1553\cdot\allowbreak 66666667\) & \(98\)\\
+\(42444444444444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 63337\cdot\allowbreak 55844720101\) & \(66\)\\
+\(44144444444444444\) & \(2^{2}\cdot\allowbreak 131\cdot\allowbreak 139\cdot\allowbreak 606080021479\) & \(65\)\\
+\(66666666666660666\) & \(2\cdot\allowbreak 3\cdot\allowbreak 1499\cdot\allowbreak 7412348973389\) & \(96\)\\
+\(66666666666666665\) & \(5\cdot\allowbreak 89\cdot\allowbreak 1447\cdot\allowbreak 1553\cdot\allowbreak 66666667\) & \(101\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{18 algarismos}}\\*
+\(444244444444444444\) & \(2^{2}\cdot\allowbreak 23\cdot\allowbreak 1063\cdot\allowbreak 131501\cdot\allowbreak 34543939\) & \(70\)\\
+\(444444444414444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 37037037034537037\) & \(69\)\\
+\(444444444644444444\) & \(2^{2}\cdot\allowbreak 251\cdot\allowbreak 4409\cdot\allowbreak 283511\cdot\allowbreak 354139\) & \(74\)\\
+\(444444474444444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 569431\cdot\allowbreak 65042190427\) & \(75\)\\
+\(444444744444444444\) & \(2^{2}\cdot\allowbreak 3\cdot\allowbreak 52076377\cdot\allowbreak 711206581\) & \(75\)\\
+\(555555535555555555\) & \(5\cdot\allowbreak 17\cdot\allowbreak 113\cdot\allowbreak 139\cdot\allowbreak 173\cdot\allowbreak 2405299753\) & \(88\)\\
+\(555555555554555555\) & \(5\cdot\allowbreak 71\cdot\allowbreak 79\cdot\allowbreak 251\cdot\allowbreak 152783\cdot\allowbreak 516563\) & \(89\)\\
+\(575555555555555555\) & \(5\cdot\allowbreak 5197\cdot\allowbreak 27361\cdot\allowbreak 809529283\) & \(92\)\\
+\(585555555555555555\) & \(3\cdot\allowbreak 5\cdot\allowbreak 47\cdot\allowbreak 179\cdot\allowbreak 211\cdot\allowbreak 21990925259\) & \(93\)\\
+\(666666665666666666\) & \(2\cdot\allowbreak 691\cdot\allowbreak 723589\cdot\allowbreak 666666667\) & \(107\)\\
+\noalign{\smallskip}
+\multicolumn{3}{c}{\textit{19 algarismos}}\\*
+\(2224222222222222222\) & \(2\cdot\allowbreak 7\cdot\allowbreak 11\cdot\allowbreak 13\cdot\allowbreak 101\cdot\allowbreak 11000001099011\) & \(40\)\\
+\(4444444444444844444\) & \(2^{2}\cdot\allowbreak 11\cdot\allowbreak 191\cdot\allowbreak 4363\cdot\allowbreak 121212169697\) & \(80\)\\
+\(4444448444444444444\) & \(2^{2}\cdot\allowbreak 821\cdot\allowbreak 666667\cdot\allowbreak 2030045473\) & \(80\)\\
+\(5553555555555555555\) & \(3\cdot\allowbreak 5\cdot\allowbreak 7\cdot\allowbreak 73\cdot\allowbreak 724534319054867\) & \(93\)\\
+\(5555555525555555555\) & \(5\cdot\allowbreak 7\cdot\allowbreak 4129\cdot\allowbreak 38442760443937\) & \(92\)\\
+\(5755555555555555555\) & \(5\cdot\allowbreak 13\cdot\allowbreak 47\cdot\allowbreak 257\cdot\allowbreak 16417\cdot\allowbreak 446528429\) & \(97\)\\
+\(6666676666666666666\) & \(2\cdot\allowbreak 19\cdot\allowbreak 67\cdot\allowbreak 14639\cdot\allowbreak 178870854739\) & \(115\)\\
+\end{longtable}
+\endgroup
+
+\end{document}
